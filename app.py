@@ -29,7 +29,7 @@ def get_restaurant_alternatives(city, current_restaurant, dish):
     - Estimated delivery time
     - Distance/location area in {city}
     - Why it's a good alternative (brief reason)
-    - Price range (₹, ₹₹, ₹₹₹)
+    - Price range ($, $, $$)
     
     Assume realistic restaurant names and details for {city}. Make the suggestions practical and diverse.
     
@@ -42,7 +42,7 @@ def get_restaurant_alternatives(city, current_restaurant, dish):
                 "delivery_time": "15-25 mins",
                 "location": "Area name",
                 "reason": "Known for quick service and authentic taste",
-                "price_range": "₹₹"
+                "price_range": "$"
             }}
         ]
     }}
