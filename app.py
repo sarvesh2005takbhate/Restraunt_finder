@@ -144,25 +144,32 @@ def main():
                     
                     for i, restaurant in enumerate(results['alternatives'], 1):
                         with st.container():
+                            # Create a colored container using Streamlit's built-in styling
                             st.markdown(f"""
-                            <div class="restaurant-card">
+                            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                                        padding: 1.5rem; border-radius: 10px; margin: 1rem 0; 
+                                        color: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
                                 <h3>#{i} {restaurant['name']}</h3>
-                                <p><strong>Cuisine:</strong> {restaurant['cuisine']}</p>
-                                <p><strong>Location:</strong> {restaurant['location']}</p>
-                                <p><strong>Why Choose:</strong> {restaurant['reason']}</p>
-                                
-                                <div class="metric-container">
-                                    <div class="metric-item">
-                                        <h4>⏱️ Delivery Time</h4>
-                                        <p>{restaurant['delivery_time']}</p>
-                                    </div>
-                                    <div class="metric-item">
-                                        <h4>💰 Price Range</h4>
-                                        <p>{restaurant['price_range']}</p>
-                                    </div>
-                                </div>
+                                <p><strong>🍽️ Cuisine:</strong> {restaurant['cuisine']}</p>
+                                <p><strong>📍 Location:</strong> {restaurant['location']}</p>
+                                <p><strong>✨ Why Choose:</strong> {restaurant['reason']}</p>
                             </div>
                             """, unsafe_allow_html=True)
+                            
+                            # Use Streamlit columns for metrics
+                            col1, col2 = st.columns(2)
+                            with col1:
+                                st.metric(
+                                    label="⏱️ Delivery Time",
+                                    value=restaurant['delivery_time']
+                                )
+                            with col2:
+                                st.metric(
+                                    label="💰 Price Range",
+                                    value=restaurant['price_range']
+                                )
+                            
+                            st.markdown("---")  # Separator line
                     
                     # Additional tips
                     st.markdown("### 💡 Pro Tips")
