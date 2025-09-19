@@ -3,7 +3,7 @@
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://restrauntfinder-ej9ycbed8cwbyypwyoigvd.streamlit.app/)
 
 ## 🚀 Live Demo
-**Try it now:** [https://restrauntfinder-ej9ycbed8cwbyypwyoigvd.streamlit.app/](https://restrauntfinder-ej9ycbed8cwbyypwyoigvd.streamlit.app/)
+**Try it now:** [https://restrauntfinder-oc92ffvbfu2wgh8ycjfqu8.streamlit.app/](https://restrauntfinder-oc92ffvbfu2wgh8ycjfqu8.streamlit.app/)
 
 ## 📖 Problem Statement
 Ever ordered food online and it's taking forever? You're hungry, the estimated delivery time keeps increasing, and you're stuck waiting. **QuickEats** solves this problem by instantly finding you alternative restaurants that serve similar dishes with faster delivery times!
